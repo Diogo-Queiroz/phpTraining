@@ -14,7 +14,7 @@
     <header>
       <h1>Calculadora de Conversão de Temperatura:</h1>
     </header>
-    <section>
+    <section class="col-sm-6">
       <div>
         <form class="form-horizontal" action="index.php" method="get">
           <div class="form-group">
@@ -36,18 +36,18 @@
               </select>
             </div>
           </div>
-          <div class="col-sm-offset-2 col-sm-10">
-            <button class="btn btn-default" type="submit">Enviar</button>
-          </div>
-          <div class="form-group">
-            <label for="resultado" class="col-sm-2 control-label">Resultado da Conversão:</label>
-            <div class="col-sm-10">
-              <?= $resultado ?>
-            </div>
+          <div class="col-sm-offset-6 col-sm-6">
+            <button class="btn btn-lg btn-primary" type="submit">Enviar</button>
           </div>
         </form>
       </div>
     </section>
+    <aside class="col-sm-6">
+        <label for="resultado" class="col-sm-6 control-label">Resultado da Conversão:</label>
+        <div class="col-sm-6">
+          <input class="form-control" value="<?= $resultado ?>"/>
+        </div>
+    </aside>
   <footer></footer>
 
   <script src="js/bootstrap.js"></script>
